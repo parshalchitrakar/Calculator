@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="description" content="calculator description">
 	<meta charset="utf-8">
@@ -8,30 +9,81 @@
 	<title>Calculator</title>
 
 </head>
+
 <body>
-	<h1> Basic Calculator</h1> 
+	<h1> Basic Calculator</h1>
 	<br>
 	<form id="form" Name="calci">
-		<input name="display" style="width: 565px;height: 100px;background-color: skyblue;text-align: right;cursor:default;"><br>
-		<input type="button" value="0" onclick="calci.display.value+='0'">
-		<input type="button" value="1" onclick="calci.display.value+='1'">
-		<input type="button" value="2" onclick="calci.display.value+='2'">
-		<input type="button" value="+"  onclick="calci.display.value+='+'" style="background-color:#1eeb52;"><br>
-		<input type="button" value="3"  onclick="calci.display.value+='3'">
-		<input type="button" value="4"  onclick="calci.display.value+='4'">
-		<input type="button" value="5"  onclick="calci.display.value+='5'">
-		<input type="button" value="-"  onclick="calci.display.value+='-'" style="background-color:royalblue;"><br>
-		<input type="button" value="6"  onclick="calci.display.value+='6'">
-		<input type="button" value="7"  onclick="calci.display.value+='7'">
-		<input type="button" value="8"  onclick="calci.display.value+='8'">
-		<input type="button" value="&#215;"  onclick="calci.display.value+='*'" style="background-color: maroon;"><br>
-		<input type="button" value="9"  onclick="calci.display.value+='9'">
-		<!--adding additional feature in your calculator.-->
-		<input type="button" value="/"  onclick="calci.display.value+='/'" style="background-color:grey;"><br>
-		<input type="button" value="%"  onclick="calci.display.value+='%'" style="background-color:pink;"><br>
-		<input type="button" value="C"  onclick="calci.display.value=''" style="background-color: red;">
-		<input type="button" value="="  onclick="calci.display.value=eval(calci.display.value)" style="background-color: green;">
-		<input type="button" value="&#247"  onclick="calci.display.value+='/'" style="background-color: yellow;">
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td colspan=5>
+					<input name="display"
+						style="width: 700px;height: 100px;background-color: skyblue;text-align: right;cursor:default;">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="1" onclick="calci.display.value+='1'">
+				</td>
+				<td>
+					<input type="button" value="2" onclick="calci.display.value+='2'">
+				</td>
+				<td>
+					<input type="button" value="3" onclick="calci.display.value+='3'">
+				<td>
+					<input type="button" value="+" onclick="calci.display.value+='+'" style="background-color:#1eeb52;">
+				</td>
+				<td rowspan=2>
+					<input type="button" value="C" onclick="calci.display.value=''" style="background-color: red; height:200px;">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="4" onclick="calci.display.value+='4'">
+				</td>
+				<td>
+					<input type="button" value="5" onclick="calci.display.value+='5'">
+				</td>
+				<td>
+					<input type="button" value="6" onclick="calci.display.value+='6'">
+				</td>
+				<td>
+					<input type="button" value="-" onclick="calci.display.value+='-'" style="background-color:royalblue;">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="7" onclick="calci.display.value+='7'">
+				</td>
+				<td>
+					<input type="button" value="8" onclick="calci.display.value+='8'">
+				</td>
+				<td>
+					<input type="button" value="9" onclick="calci.display.value+='9'">
+				</td>
+				<td>
+					<input type="button" value="&#215;" onclick="calci.display.value+='*'" style="background-color: maroon; ">
+				</td>
+				<td rowspan=2>
+					<input type="button" value="=" onclick="calci.display.value=eval(calci.display.value)" style="background-color: green; height:200px;">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="/" onclick="calci.display.value+='/'" style="background-color:grey;">
+				</td>
+				<td>
+					<input type="button" value="0" onclick="calci.display.value+='0'">
+				</td>
+				<td>
+					<input type="button" value="%" onclick="calci.display.value+='%'" style="background-color:pink;">
+				</td>
+				<td>
+					<input type="button" value="&#247" onclick="calci.display.value+='/'" style="background-color: yellow;">
+				</td>
+			</tr>
 
+		</table>
 </body>
+
 </html>
